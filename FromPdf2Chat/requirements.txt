@@ -1,0 +1,6 @@
+langchain
+pypdf2
+streamlit
+sentence-transformers
+InstructorEmbedding
+faiss-cpu
