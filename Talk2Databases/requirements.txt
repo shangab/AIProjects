@@ -1,0 +1,5 @@
+langchain
+langchain-openai
+mysql-connector-python
+streamlit
+python-dotenv
