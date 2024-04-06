@@ -1,0 +1,12 @@
+if(gender==m&&age<=30,
+    Sports,
+    if(gender==m&&age<=50,
+        Travel,
+        if(gender==m&&age>50,
+            Reading,
+            if(gender==f&&age<=30,
+                Fasion,
+                if(gender==f&&age<=50,
+                    Cooking,
+                    Sewing,)))))
+

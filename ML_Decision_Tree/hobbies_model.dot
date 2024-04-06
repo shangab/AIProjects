@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="gender <= 0.5\ngini = 0.783\nsamples = 126\nvalue = [18, 9, 35, 38, 9, 17]\nclass = Sewing", fillcolor="#f8fcfe"] ;
+1 [label="age <= 50.0\ngini = 0.562\nsamples = 65\nvalue = [18, 9, 0, 38, 0, 0]\nclass = Sewing", fillcolor="#abd5f4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="age <= 30.5\ngini = 0.444\nsamples = 27\nvalue = [18, 9, 0, 0, 0, 0]\nclass = Cooking", fillcolor="#f2c09c"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 9\nvalue = [0, 9, 0, 0, 0, 0]\nclass = Fasion", fillcolor="#9de539"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 18\nvalue = [18, 0, 0, 0, 0, 0]\nclass = Cooking", fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 38\nvalue = [0, 0, 0, 38, 0, 0]\nclass = Sewing", fillcolor="#399de5"] ;
+1 -> 5 ;
+6 [label="age <= 50.5\ngini = 0.571\nsamples = 61\nvalue = [0, 0, 35, 0, 9, 17]\nclass = Reading", fillcolor="#aef4cb"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="age <= 30.5\ngini = 0.453\nsamples = 26\nvalue = [0, 0, 0, 0, 9, 17]\nclass = Travel", fillcolor="#f3a2d1"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 9\nvalue = [0, 0, 0, 0, 9, 0]\nclass = Sports", fillcolor="#8139e5"] ;
+7 -> 8 ;
+9 [label="gini = 0.0\nsamples = 17\nvalue = [0, 0, 0, 0, 0, 17]\nclass = Travel", fillcolor="#e5399d"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 35\nvalue = [0, 0, 35, 0, 0, 0]\nclass = Reading", fillcolor="#39e581"] ;
+6 -> 10 ;
+}
